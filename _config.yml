@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Franklyn Roth's Blog
+subtitle: Web developer problems and solutions. Open to freelance work.
 description:
-author: John Doe
+author: Franklyn Roth
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://franklynroth.me/blog
+url: https://franklynroth.me/blog
 root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -64,6 +64,9 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
+
+# Disqus comments
+disqus_shortname: franklynroth
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

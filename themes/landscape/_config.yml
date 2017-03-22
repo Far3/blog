@@ -1,6 +1,6 @@
 # Header
 menu:
-  Home: /
+  Home: /blog
   Archives: /archives
 rss: /atom.xml
 
@@ -9,10 +9,8 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
-- category
-- tag
 - tagcloud
 - archive
 - recent_posts
@@ -28,9 +26,9 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-59009416-3
 favicon: /favicon.png
-twitter:
+twitter: franklynroth
 google_plus:
 fb_admins:
 fb_app_id:
