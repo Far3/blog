@@ -6,9 +6,11 @@ When you want to write a post
 3. hexo server
 4. Hexo generate
 8. hexo deploy
-THe above will generate a static file to your gh-pages branch and then deploy it.
+The above will generate a static file to your gh-pages branch and then deploy it to franklynroth.me/blog
 
-This will keep your master repo up to date
+To update the master repo with your "newpost.md" This is to seperate the compiled version from the working version.
 5. git add
 6. git commit -m "Your Message"
 7. git push origin master
+
+gh-pages and master should never be merged, they are entirely seperate branches for a reason.
