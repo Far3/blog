@@ -14,4 +14,4 @@ To update the master repo with your "newpost.md" This is to seperate the compile
 * git commit -m "Your Message"
 * git push origin master
 
-gh-pages and master should never be merged, they are entirely seperate branches for a reason.
+gh-pages and master should never be merged, they are entirely seperate branches to have seperation between the generated code and source code that you are working in.
