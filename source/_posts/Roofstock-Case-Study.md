@@ -54,3 +54,15 @@ After hearing about roofstock on a Listen Money Matters podcast. I was very inte
 
 9/5/17
 - Got an email requesting for a lender payment of $650 and payed it via credit card.
+
+9/09/17
+- Got a call from meridian title company confirming what address my wire transfer was for.
+
+9/11/17
+- Received an updated PSA extending the Appraisal contingency to 9/27/17 and the close on escrow to 10/06/17.
+- Appraisal has been scheduled for 9/18/17
+- Home loan has officially been approved.
+ - Needed to completed an inquiry letter with recent credit pulls
+ - Needed to show proof earnest money came out of my account with the before and after balance.
+
+ 
