@@ -65,4 +65,5 @@ After hearing about roofstock on a Listen Money Matters podcast. I was very inte
  - Needed to completed an inquiry letter with recent credit pulls
  - Needed to show proof earnest money came out of my account with the before and after balance.
 
- 
+ 9/13/17
+ - Received the insurance verification files in my inbox. Saved them to my cloud storage.
