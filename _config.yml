@@ -4,7 +4,7 @@
 
 # Site
 title: Franklyn Roth's Blog
-subtitle: Web developer problems and solutions. Open to freelance work.
+subtitle: Web developer problems and solutions.
 description:
 author: Franklyn Roth
 language:
@@ -72,5 +72,5 @@ disqus_shortname: franklynroth
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Far3/blog.git
+  repo: git@github.com:Far3/blog.git
   branch: gh-pages
