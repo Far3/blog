@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Recap and booleans. | Franklyn Roth&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="A quick recap   You don’t have to capitalize class names for the program to compile, but is a good idea/coding convention to do so.  readonly fields can be set only during object construction  Constru">
+<meta name="keywords" content="oop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Recap and booleans.">
+<meta property="og:url" content="https://franklynroth.me/blog/2016/06/29/Recap-bools/index.html">
+<meta property="og:site_name" content="Franklyn Roth&#39;s Blog">
+<meta property="og:description" content="A quick recap   You don’t have to capitalize class names for the program to compile, but is a good idea/coding convention to do so.  readonly fields can be set only during object construction  Constru">
+<meta property="og:updated_time" content="2018-03-13T05:05:41.324Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Recap and booleans.">
+<meta name="twitter:description" content="A quick recap   You don’t have to capitalize class names for the program to compile, but is a good idea/coding convention to do so.  readonly fields can be set only during object construction  Constru">
+<meta name="twitter:creator" content="@franklynroth">
+  
+    <link rel="alternate" href="/atom.xml" title="Franklyn Roth&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-59009416-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Franklyn Roth&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/blog/" id="subtitle">Web developer problems and solutions.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/../">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://franklynroth.me/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Recap-bools" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2016/06/29/Recap-bools/" class="article-date">
+  <time datetime="2016-06-29T06:00:00.000Z" itemprop="datePublished">2016-06-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Recap and booleans.
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p></p><h1>A quick recap</h1><p></p>
+<ul><br>  <li>You don’t have to capitalize class names for the program to compile, but is a good idea/coding convention to do so.</li><br>  <li><code>readonly</code> fields can be set only during object construction</li><br>  <li>Constructors cannot return anything, they are void methods.</li><br>  <li>Public fields are directly accessible from outside the class</li><br>  <li>Private fields can only be accessed from within the class they are defined in</li><br></ul>
+
+<p></p><h2>Boolean Values</h2><p></p>
+<p><br> Boolean values are essential to know. We want to create a Method (behavior) of the map that will let us know if a particular point is in bounds or not. an <code>OnMap</code> method is an example. We would have a boolean (True/False) variable where if the width or height are greater than the map values passed in then the <code>OnMap</code> method would return false. Letting you know the point is not on the map.<br> </p><br> <p><br> C# uses a practice called short-circuiting. This means that it will try and do as little work as possible when evaluating a Boolean expression. Some operators include <code>||</code>, <code>&amp;&amp;</code>, and the <code>!</code>.<br> </p><br> <p><br> More info can be found at the following links about <a href="https://msdn.microsoft.com/en-us/library/2a723cdk.aspx" target="_"blank"">&amp;&amp;</a>, <a href="https://msdn.microsoft.com/en-us/library/6373h346.aspx" target="_"blank"">||</a> and  <a href="https://msdn.microsoft.com/en-us/library/f2kd6eb2.aspx" target="_"blank""></a><br> </p>
+
+ <p>Knowing how these operators work in your sleep will definately help you along in all aspects of development. It also sometimes comed in handy in life when making choices between one thing or another.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://franklynroth.me/blog/2016/06/29/Recap-bools/" data-id="cjep7jl4b000zy0ut8m10y28m" class="article-share-link">Partager</a>
+      
+        <a href="https://franklynroth.me/blog/2016/06/29/Recap-bools/#disqus_thread" class="article-comment-link">Commentaires</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/oop/">oop</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/07/06/Coding-conventions/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          Coding Conventions
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2016/06/22/Constructors/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Constructors.</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/2016/" style="font-size: 13.33px;">2016</a> <a href="/blog/tags/Book-Review/" style="font-size: 10px;">Book Review</a> <a href="/blog/tags/accessibility/" style="font-size: 10px;">accessibility</a> <a href="/blog/tags/api/" style="font-size: 10px;">api</a> <a href="/blog/tags/basics/" style="font-size: 10px;">basics</a> <a href="/blog/tags/book/" style="font-size: 13.33px;">book</a> <a href="/blog/tags/bootstrap/" style="font-size: 10px;">bootstrap</a> <a href="/blog/tags/border-box/" style="font-size: 10px;">border-box</a> <a href="/blog/tags/css/" style="font-size: 16.67px;">css</a> <a href="/blog/tags/git/" style="font-size: 10px;">git</a> <a href="/blog/tags/html/" style="font-size: 10px;">html</a> <a href="/blog/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/blog/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/blog/tags/less/" style="font-size: 10px;">less</a> <a href="/blog/tags/motivation/" style="font-size: 10px;">motivation</a> <a href="/blog/tags/naming/" style="font-size: 10px;">naming</a> <a href="/blog/tags/oop/" style="font-size: 20px;">oop</a> <a href="/blog/tags/pre-work/" style="font-size: 13.33px;">pre-work</a> <a href="/blog/tags/preprocessor/" style="font-size: 10px;">preprocessor</a> <a href="/blog/tags/sourcecontrol/" style="font-size: 10px;">sourcecontrol</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/05/">May 2013</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2018/03/12/Sales-Dogs-book-review/">Sales Dogs book review</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2018/02/26/The-Automatic-Customer-By-John-Warrillow-Book-Notes/">The Automatic Customer By John Warrillow - Book Notes</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2017/09/05/React-Component-types/">React Component types</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2017/09/01/Roofstock-Case-Study/">Roofstock Case Study</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2017/08/21/React-essentials-training/">React essentials training</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Franklyn Roth<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/../" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'franklynroth';
+  
+  var disqus_url = 'https://franklynroth.me/blog/2016/06/29/Recap-bools/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog/js/script.js"></script>
+
+  </div>
+</body>
+</html>
