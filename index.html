@@ -79,6 +79,158 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/" class="article-date">
+  <time datetime="2018-05-14T17:22:21.000Z" itemprop="datePublished">2018-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/">Object-Oriented Design Course review by Simon Allardice on Lynda</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Course notes from Object-Oriented Design by Simon Alladice</p>
+<p>This was an exceptional course that I followed along with on Lynda.com. It was language agnostic, but Simon put in great examples of how different things would be implemented in differing languages.</p>
+<p>It was broken down into very easy to understand concepts that I will 100% take to work with me. He touched on UML design and how to structure your programs in an Object Oriented fashion.</p>
+<p>Below are my rough notes that I took while following along. If you want to really get to know OOP principles I would probably reccommend learning a strong static typed language like C# or Java.</p>
+<p><a href="https://www.lynda.com/Java-tutorials/Foundations-Programming-Object-Oriented-Design/96949-2.html" target="_blank" rel="noopener">https://www.lynda.com/Java-tutorials/Foundations-Programming-Object-Oriented-Design/96949-2.html</a></p>
+<p>Abstraction: Abstract out a new object. Only focus on the essentials.</p>
+<p>Encapsulation: Hide code, show only what you need.</p>
+<p>Inheritance: Write a new class but base it on an existing class.</p>
+<p>Person &gt; Customer. Customer inherits from the person. THen we say, what do we add to it.</p>
+<p>customer number</p>
+<p>Person is the superclass or parent class and customer is child class or subclass.</p>
+<p>More common to inherit from one class. C#/Java/Ruby/Obj C all enforce this.</p>
+<p>Polymorthpism: Many forms. Automatically do the correct behavior?</p>
+<ul>
+<li>sign will automatically do the correct behavior. We can do the same idea. concat vs adding</li>
+</ul>
+<p>ovverriding a behavior. Is to re-write it.</p>
+<p>Example of investment account, add penality to the withdraw method.</p>
+<p>What classes do you need and what do you want?</p>
+<ol>
+<li><p>Gather requirements</p>
+<p> Always write it down.</p>
+</li>
+<li><p>Describe app</p>
+<p> In plain conversational language, what does the app do. use cases, user stories.</p>
+</li>
+<li><p>ID most important objects</p>
+<p> Pick out the most important ideas and things and discard what is irrelevent.</p>
+</li>
+<li><p>Describe the interactions</p>
+<p> what needs to happen and what order do they need to happen in</p>
+</li>
+<li><p>create a class diagram.</p>
+<p> Be really specific about inheritence and polymorphism. The output is on paper for now or a whiteboard. The class diagram is the most common method.</p>
+</li>
+</ol>
+<p>Creating requirements</p>
+<p>Functional Requirements. What does it do.</p>
+<p>non-functional requirements</p>
+<p>help, legal, performance, support, security.</p>
+<p>FURPS</p>
+<p>Functional, usability, reliability, performance, supportability requirements</p>
+<p>design, implementation, interface and physical requirements.</p>
+<p>Creating a use case for you app.</p>
+<p>Title:</p>
+<p>Actor:</p>
+<p>Scenario:</p>
+<p>1.</p>
+<p>2.</p>
+<p>3.</p>
+<p>Workout use cases as good as you can, but finish it and move to the next step.</p>
+<p>Use active voice and focus on intention. Keep exxtra words and pseudocode out of it.</p>
+<p>Identifying objects: Identify all of the nouns.</p>
+<p>Customer confirms items in shopping car. customer provides payment and address to process sale. system validates payment and responds by confirming order, and provides order number that customer can use to check on order status. System will send customer a copy of order details by email.</p>
+<p>Customer, item, shopping card, payment, address, order, order number, email</p>
+<p>Create a basic UML Diagram and then assign responsibilities.</p>
+<p>Always multiple successful ways to incorporate different ideas.</p>
+<p>CRC: Class responsibility collaboration.</p>
+<p>Class Name, Responsibility, collaborators(other classes).</p>
+<p>Use nouns in the description.</p>
+<p>Payment</p>
+<p>Store payment detaisl, validate payment.</p>
+<p>Product</p>
+<p>Attributes</p>
+<p>name</p>
+<p>isActive</p>
+<p>launchDate</p>
+<p>itemNumber</p>
+<p>Operations</p>
+<p>getName</p>
+<p>setActive</p>
+<p>getProductDetails</p>
+<p>verbNoun</p>
+<p>instantiation: Create a new object.</p>
+<p>Customer fred = new Customer();</p>
+<p>Constructor: Special method that exists to construct the object.</p>
+<p>Spaceship</p>
+<p>name</p>
+<p>shieldStrength</p>
+<p>fire();</p>
+<p>reduceShields();</p>
+<p>Spaceship turny = new Spaceship();</p>
+<p>//Object exists, but has a meaningless state.</p>
+<p>name: null</p>
+<p>shieldStrength: 0</p>
+<p>Constructors allow you to populate meaningful values when a new object is instantiated.</p>
+<p>public Spaceship() {</p>
+<p> name = “theTurny”</p>
+<p>shieldStrength = 100;</p>
+<p>}</p>
+<p>overloaded, allow you to set the values to different values. Allows flexibiliy.</p>
+<p>static: one object shared accross all levels. One copy along all objects.</p>
+<p>Inheritance describes an “Is A” relationship.</p>
+<p>An employee is a person a customer is a person</p>
+<p>Abstract classes are never instantiated.</p>
+<p>Interface: &lt;ust provide the methods the interface calls out. Many differnt classes can use the same interace.</p>
+<p>Well tested best practices to write code. design pattern</p>
+<p>design patterns, gang of 4</p>
+<p>DRY: Dont repeat yourself.</p>
+<p>YAGNI: You ain’t gonna need it. </p>
+<p>Don’t write speculative code, keep it simple and write for today.</p>
+<p>Code smell, unecessary code. Code smell.</p>
+<p>long method</p>
+<p>short identifiers</p>
+<p>pointless comments</p>
+<p>god object</p>
+<p>feature envy</p>
+<p>SOLID</p>
+<p>uncle bob</p>
+<p>single resp</p>
+<p>One reason to exist.</p>
+<p>open close</p>
+<p>open to extension but closed to modification</p>
+<p>GRASP</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/" data-id="cjh6irpww000vkkutr0wa0p4n" class="article-share-link">Partager</a>
+      
+        <a href="https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/#disqus_thread" class="article-comment-link">Commentaires</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Sales-Dogs-book-review" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2018/03/12/Sales-Dogs-book-review/" class="article-date">
@@ -346,7 +498,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2018/03/12/Sales-Dogs-book-review/" data-id="cjep7jl4e0011y0utp79e7hgx" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2018/03/12/Sales-Dogs-book-review/" data-id="cjh6irpx80018kkut90kqxeu2" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2018/03/12/Sales-Dogs-book-review/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -637,7 +789,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2018/02/26/The-Automatic-Customer-By-John-Warrillow-Book-Notes/" data-id="cjep7jl4r0019y0utt6a7c68k" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2018/02/26/The-Automatic-Customer-By-John-Warrillow-Book-Notes/" data-id="cjh6irpxh001fkkut6el1uohb" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2018/02/26/The-Automatic-Customer-By-John-Warrillow-Book-Notes/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -680,7 +832,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/09/05/React-Component-types/" data-id="cjep7jl43000wy0utpgtqz4sc" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/09/05/React-Component-types/" data-id="cjh6irpx30011kkutr3x34faw" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/09/05/React-Component-types/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -795,7 +947,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/09/01/Roofstock-Case-Study/" data-id="cjep7jl4m0014y0utw76o5k4f" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/09/01/Roofstock-Case-Study/" data-id="cjh6irpxd001bkkutai5zlfgu" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/09/01/Roofstock-Case-Study/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -854,7 +1006,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/08/21/React-essentials-training/" data-id="cjep7jl47000xy0utfuqcl1vb" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/08/21/React-essentials-training/" data-id="cjh6irpxa001akkutpcng6mxd" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/08/21/React-essentials-training/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -893,7 +1045,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/03/21/Javascript-ES6-Mini-Series/" data-id="cjep7jl3c000ky0utvuuox968" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/03/21/Javascript-ES6-Mini-Series/" data-id="cjh6irpvw000gkkutoqu2symk" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/03/21/Javascript-ES6-Mini-Series/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -944,7 +1096,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/" data-id="cjep7jl0j0000y0utaka4ldgu" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/" data-id="cjh6irpvj0008kkutruymjvak" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -989,149 +1141,11 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/03/06/Learning-react-resources/" data-id="cjep7jl3d000ly0ut2koq028h" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2017/03/06/Learning-react-resources/" data-id="cjh6irpwd000lkkutoj9xucjy" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2017/03/06/Learning-react-resources/#disqus_thread" class="article-comment-link">Commentaires</a>
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-So-good-they-cant-ignore-you" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2016/11/23/So-good-they-cant-ignore-you/" class="article-date">
-  <time datetime="2016-11-23T07:00:00.000Z" itemprop="datePublished">2016-11-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2016/11/23/So-good-they-cant-ignore-you/">So good they can&#39;t ignore you</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I’ve had this book on my to read list for years, and I had a long weekend dog sitting and was able to finish it in one sitting on the back porch on a beautiful Sunny colorado day. I am definitely on the right path, most of the advice that is relevant to me is toward the beginning part of the book. The building of career capital part. In a few years, the next parts will be more relevant as I try and work remotely full-time.</p>
-<p>The narratives of this book follow a common thread. THe importance of ability ie be good at what you do. To follow in the words of Steve Martin, Be so good they can’t ignore you.</p>
-<p>Rule #1: Don’t follow your passion</p>
-<p>Compelling careers often have complex origins that reject the simple idea that all you have to do is follow your passion.</p>
-<p>Career passions are rare, passion takes time and passion is a side effect of mastery</p>
-<p>Self determination theory is the best understanding science currently has on why some pursuits excite us.</p>
-<p>3 basic psychological needs required to feel intrinsically motivated for your work.</p>
-<ul>
-<li><p>Autonomy: The feeling that you have control over your day, and that your actions are important.</p>
-</li>
-<li><p>Competence: The feeling that you are good at what you do.</p>
-</li>
-<li><p>Relatednedss: The feeling of connection to other people</p>
-</li>
-</ul>
-<p>Working right, trumps finding the right work.</p>
-<p>Passion could be dangerous and has made people leave their jobs with no career capital, yoga example.</p>
-<p>Focus on the craftsman mindset. On what value that you’re producing in your job vs the passion mindset on a focus on what value your job offers you. </p>
-<p>Jordan Tice, guitar player example. Always tried to focus on the process of practicing. </p>
-<p>Think of “How can I be really good?”</p>
-<p>Track the hours that you spend each month, learning something new and building something with that knowledge.</p>
-<p>Turn the attention to the quality that you produce.</p>
-<p><strong>Regardless of how you feel about your job right now, adopting the craftsman mindset will be the foundation on which you’ll build a compelling career.</strong></p>
-<p>The power of career capital</p>
-<p>If you want a great job, then you need to build up rare and valuable skills to offer in return.</p>
-<p>Craftsman mindset…what can I offer the world.</p>
-<p>Traits that define great work. Creativity, impact and control. Now how do you get these traits into your own working life?</p>
-<ul>
-<li><p>THe traits that define great work are rare and valuable</p>
-</li>
-<li><p>Supply and demand says that if you want these traits you need rare and valuable skills to offer in return. Think of these skills are career capital that you can offer. Ie programming, accessibility niche, automated testing, javascript, speaking at seminars</p>
-</li>
-<li><p>The craftsman mindset, with its relentless focus on becoming “so good they can’t ignore you” is a strategy well suited for acquiring career capital. This is why it trumps passion mindset if your goal is to create work you are proud of.</p>
-</li>
-</ul>
-<p>Three traits that disqualify for applying the craftsman mindset</p>
-<ol>
-<li><p>The job has few opportunities to distinguish yourself by developing relevant skills that are rare and valuable.</p>
-</li>
-<li><p>The job focuses on something you think is useless or bad for the world.</p>
-</li>
-<li><p>The job forces you to work with people you really really dislike.</p>
-</li>
-</ol>
-<p>Alex Berger and Mike Jackson example on adopting the craftsman mindset.</p>
-<p>Always seeking feedback on his scripts, just like you should always be seeking feedback on your code with a peer review.</p>
-<p>Basically be serious about doing your job well. Ensure that your attention is focused on the activities that matter.</p>
-<p>Becoming a craftsman..deliberate practice. The difference in strategy that separates average guitar players from stars like jordan tice is not confined to music. </p>
-<p>You need to stretch your ability and receive immediate feedback. Which is the key to successfully acquiring career capital in almost any field.</p>
-<p>Skill stretching deliberate practice.</p>
-<p>10k hour rule made popular by malcolm gladwell.</p>
-<p>Emphasizing serious study: Pouring over books and using teachers to help identify and then eliminate weaknesses.</p>
-<p>Focus on difficult activities, carefully chosen to stretch our abilities where they most need stretching and that provide immediate feedback.</p>
-<p>Deliberate practice to describe a style of serious study, activity designed for the sole purpose of improving specific aspects of an individual’s performance.</p>
-<p>Materials can be deliberately chosen or adapted such that the problems to be solved are at a level that is appropriately challenging.</p>
-<p>Focusing on difficult activities, carefully chosen to stretch your abilities where they most need stretching and that provide immediate feedback.</p>
-<p>If you just show up and work, you will soon hit a performance plateau beyond which you fail to get any better. This is what I think is currently happening with my web development/ programming career.</p>
-<p>Deliberate practice then is the key to quickly becoming so good they can’t ignore you.</p>
-<p>To successfully adopt the craftsman mindset, therefore, we have to approach our jobs in the same way that Jordan approaches his guitar playing or Kasparov approaches his chess playing</p>
-<p>Alex Bergers example of “A never ending quest to get better, it’s like a sport, you have to practice and you have to study.”</p>
-<ol>
-<li><p>Decide what capital market you are in.</p>
-<ol>
-<li><p>WInner take all and auction</p>
-</li>
-<li><p>Programming, the only ability is to write good code.</p>
-</li>
-</ol>
-</li>
-<li><p>Identify your capital type</p>
-</li>
-<li><p>Define ‘good’</p>
-<ol>
-<li><p>Get clear goals. Deliberate practice requires clear goals.</p>
-<ol>
-<li><p>FInish teamtreehouse fullstack JS course.</p>
-</li>
-<li><p>Get a freelance web developer position/contract gig.</p>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>Stretch and destroy (The current step I am doing). </p>
-</li>
-</ol>
-<p>Doing things we know how to do well is enjoyable, and that is exactly the opposite of what deliberate practice demands. Deliberate practice demands an all effort of focus and concentration. That is what makes it ‘deliberate’ as distinct from the mindless playing of scales or hitting of tennis balls that most people engage in. OR watching beginner programming tutorials over and over again.</p>
-<p>Deliberate practice is not enjoyable. It feels like a stretch. It is an uncomfortable sensation in your head that kinda feels like a physical strain, as if neurons are physically reforming into new configurations. That stretching feeling is the precondition to getting better.</p>
-<p>THis is what you should experience in your own pursuit of ‘good’. If you’re not uncomfortable, then you’re probably stuck and an ‘acceptable’ level and you should seek out more responsibility.</p>
-<p>Now that is only part 1, part 2 is embracing honest and candid feedback. Ie code reviews with senior mentors/teachers.</p>
-<p>Sometimes it’s from harsh feedback where you learn where to retrain your focus in order to continue to make progress.</p>
-<p>Keep a constant stream of feedback coming. Ask advice from people that will tell you what is working and what is not working in your writing.</p>
-<p>Continuous and harsh feedback he received accelerated the growth of his ability.</p>
-<p>Step 5: Be patient</p>
-<p>I thought, if I stay with it for 20 years and anyone who sticks with something for 20 years will be pretty good at it.</p>
-<p>There is an importance of diligence. Without this patient willingness to reject shiny new pursuits, you’ll derail your efforts before you acquire the capital that you need.</p>
-<p>You stretch yourself, day after day, month after month and then finally look up and realize…Hey I’m pretty good at this and people are starting to notice.</p>
-<p>I’m not going to write up the rule #3 and #4 because they are not super relevant to me yet, but they are definitely worth a read if you are at that stage where you’re career capital is at a good level. 2 more years left for me and then I will focus on the additional rules. Until then, thanks for reading.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2016/11/23/So-good-they-cant-ignore-you/" data-id="cjep7jl4p0016y0ut0oe69wxd" class="article-share-link">Partager</a>
-      
-        <a href="https://franklynroth.me/blog/2016/11/23/So-good-they-cant-ignore-you/#disqus_thread" class="article-comment-link">Commentaires</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/book/">book</a></li></ul>
-
     </footer>
   </div>
   
@@ -1314,7 +1328,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2016/11/23/Mastery/" data-id="cjep7jl3n000py0utstypxvdy" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2016/11/23/Mastery/" data-id="cjh6irpwy000xkkutch4kpjhr" class="article-share-link">Partager</a>
       
         <a href="https://franklynroth.me/blog/2016/11/23/Mastery/#disqus_thread" class="article-comment-link">Commentaires</a>
       
@@ -1350,7 +1364,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/05/">May 2013</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2016/02/">February 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/05/">May 2013</a></li></ul>
     </div>
   </div>
 
@@ -1361,6 +1375,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/">Object-Oriented Design Course review by Simon Allardice on Lynda</a>
+          </li>
         
           <li>
             <a href="/blog/2018/03/12/Sales-Dogs-book-review/">Sales Dogs book review</a>
@@ -1376,10 +1394,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/blog/2017/09/01/Roofstock-Case-Study/">Roofstock Case Study</a>
-          </li>
-        
-          <li>
-            <a href="/blog/2017/08/21/React-essentials-training/">React essentials training</a>
           </li>
         
       </ul>

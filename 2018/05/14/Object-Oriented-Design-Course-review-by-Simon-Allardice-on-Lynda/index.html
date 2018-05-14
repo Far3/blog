@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Android&#39;s keyboard messes with viewport dimension | Franklyn Roth&#39;s Blog</title>
+  <title>Object-Oriented Design Course review by Simon Allardice on Lynda | Franklyn Roth&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="There is a little quirk on how the android soft-keyboard totally messes with css orientation rules. It’s probably a lesser known gotcha, but it tripped me up longer than I would have liked. Here I wil">
+  <meta name="description" content="Course notes from Object-Oriented Design by Simon Alladice This was an exceptional course that I followed along with on Lynda.com. It was language agnostic, but Simon put in great examples of how diff">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android&#39;s keyboard messes with viewport dimension">
-<meta property="og:url" content="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/index.html">
+<meta property="og:title" content="Object-Oriented Design Course review by Simon Allardice on Lynda">
+<meta property="og:url" content="https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/index.html">
 <meta property="og:site_name" content="Franklyn Roth&#39;s Blog">
-<meta property="og:description" content="There is a little quirk on how the android soft-keyboard totally messes with css orientation rules. It’s probably a lesser known gotcha, but it tripped me up longer than I would have liked. Here I wil">
-<meta property="og:updated_time" content="2018-03-13T05:05:41.296Z">
+<meta property="og:description" content="Course notes from Object-Oriented Design by Simon Alladice This was an exceptional course that I followed along with on Lynda.com. It was language agnostic, but Simon put in great examples of how diff">
+<meta property="og:updated_time" content="2018-05-14T17:25:32.348Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android&#39;s keyboard messes with viewport dimension">
-<meta name="twitter:description" content="There is a little quirk on how the android soft-keyboard totally messes with css orientation rules. It’s probably a lesser known gotcha, but it tripped me up longer than I would have liked. Here I wil">
+<meta name="twitter:title" content="Object-Oriented Design Course review by Simon Allardice on Lynda">
+<meta name="twitter:description" content="Course notes from Object-Oriented Design by Simon Alladice This was an exceptional course that I followed along with on Lynda.com. It was language agnostic, but Simon put in great examples of how diff">
 <meta name="twitter:creator" content="@franklynroth">
   
     <link rel="alternate" href="/atom.xml" title="Franklyn Roth&#39;s Blog" type="application/atom+xml">
@@ -81,10 +81,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Android-s-keyboard-messes-with-viewport-dimension" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/" class="article-date">
-  <time datetime="2017-03-20T02:20:00.000Z" itemprop="datePublished">2017-03-19</time>
+    <a href="/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/" class="article-date">
+  <time datetime="2018-05-14T17:22:21.000Z" itemprop="datePublished">2018-05-14</time>
 </a>
     
   </div>
@@ -95,7 +95,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Android&#39;s keyboard messes with viewport dimension
+      Object-Oriented Design Course review by Simon Allardice on Lynda
     </h1>
   
 
@@ -103,26 +103,127 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>There is a little quirk on how the android soft-keyboard totally messes with css orientation rules. It’s probably a lesser known gotcha, but it tripped me up longer than I would have liked. Here I will explain it and how to get around it.</p>
-<p>I was targeting a very specific set of devices using a media query of <code>(orientation: portait)</code> whenever the user selected the search bar the on screen soft-keyboard would open up on the android tablet and it would then break my styles.</p>
-<p>I reached out to my team and another developer noticed that when the height was changed it would also break the layout in the same manner as the keyboard popping up. I did some google fu and came accross two excellent links.</p>
+        <p>Course notes from Object-Oriented Design by Simon Alladice</p>
+<p>This was an exceptional course that I followed along with on Lynda.com. It was language agnostic, but Simon put in great examples of how different things would be implemented in differing languages.</p>
+<p>It was broken down into very easy to understand concepts that I will 100% take to work with me. He touched on UML design and how to structure your programs in an Object Oriented fashion.</p>
+<p>Below are my rough notes that I took while following along. If you want to really get to know OOP principles I would probably reccommend learning a strong static typed language like C# or Java.</p>
+<p><a href="https://www.lynda.com/Java-tutorials/Foundations-Programming-Object-Oriented-Design/96949-2.html" target="_blank" rel="noopener">https://www.lynda.com/Java-tutorials/Foundations-Programming-Object-Oriented-Design/96949-2.html</a></p>
+<p>Abstraction: Abstract out a new object. Only focus on the essentials.</p>
+<p>Encapsulation: Hide code, show only what you need.</p>
+<p>Inheritance: Write a new class but base it on an existing class.</p>
+<p>Person &gt; Customer. Customer inherits from the person. THen we say, what do we add to it.</p>
+<p>customer number</p>
+<p>Person is the superclass or parent class and customer is child class or subclass.</p>
+<p>More common to inherit from one class. C#/Java/Ruby/Obj C all enforce this.</p>
+<p>Polymorthpism: Many forms. Automatically do the correct behavior?</p>
 <ul>
-<li><p><a href="http://stackoverflow.com/questions/8883163/css-media-query-soft-keyboard-breaks-css-orientation-rules-alternative-solut" target="_blank" rel="noopener">stackoverflow-soft-keyboard-breaks-orientation</a></p>
-</li>
-<li><p><a href="https://web.archive.org/web/20141109111220/http://abouthalf.com/development/orientation-media-query-challenges-in-android-browsers" target="_blank" rel="noopener">android-bowser-orientation-change</a></p>
-</li>
+<li>sign will automatically do the correct behavior. We can do the same idea. concat vs adding</li>
 </ul>
-<p>It ultimately has to do with how orientation is calculated as I was using <code>(orientation: portrait)</code>. The W3 calculates orientation portrait by checking if the height or width is greater, not the actual device orentation itself. So you could still have the device upright but if the height is less than the width you are in “landscape” mode.</p>
-<p><a href="https://www.w3.org/TR/css3-mediaqueries/#orientation" target="_blank" rel="noopener">W3.org says</a><br><strong>The ‘orientation’ media feature is ‘portrait’ when the value of the ‘height’ media feature is greater than or equal to the value of the ‘width’ media feature. Otherwise ‘orientation’ is ‘landscape’.</strong></p>
-<p>So when the keyboard pops up the height is less than the width and it breaks out of the <code>(orientation: portrait)</code> media query. iOS doesn’t have this issue because the keyboard is overlaid over the browser window vs resizing the actual browser.</p>
-<p>So the solution is to stuff the styles that you want to still be applied in an <code>(orientation: landscape)</code> media query.</p>
+<p>ovverriding a behavior. Is to re-write it.</p>
+<p>Example of investment account, add penality to the withdraw method.</p>
+<p>What classes do you need and what do you want?</p>
+<ol>
+<li><p>Gather requirements</p>
+<p> Always write it down.</p>
+</li>
+<li><p>Describe app</p>
+<p> In plain conversational language, what does the app do. use cases, user stories.</p>
+</li>
+<li><p>ID most important objects</p>
+<p> Pick out the most important ideas and things and discard what is irrelevent.</p>
+</li>
+<li><p>Describe the interactions</p>
+<p> what needs to happen and what order do they need to happen in</p>
+</li>
+<li><p>create a class diagram.</p>
+<p> Be really specific about inheritence and polymorphism. The output is on paper for now or a whiteboard. The class diagram is the most common method.</p>
+</li>
+</ol>
+<p>Creating requirements</p>
+<p>Functional Requirements. What does it do.</p>
+<p>non-functional requirements</p>
+<p>help, legal, performance, support, security.</p>
+<p>FURPS</p>
+<p>Functional, usability, reliability, performance, supportability requirements</p>
+<p>design, implementation, interface and physical requirements.</p>
+<p>Creating a use case for you app.</p>
+<p>Title:</p>
+<p>Actor:</p>
+<p>Scenario:</p>
+<p>1.</p>
+<p>2.</p>
+<p>3.</p>
+<p>Workout use cases as good as you can, but finish it and move to the next step.</p>
+<p>Use active voice and focus on intention. Keep exxtra words and pseudocode out of it.</p>
+<p>Identifying objects: Identify all of the nouns.</p>
+<p>Customer confirms items in shopping car. customer provides payment and address to process sale. system validates payment and responds by confirming order, and provides order number that customer can use to check on order status. System will send customer a copy of order details by email.</p>
+<p>Customer, item, shopping card, payment, address, order, order number, email</p>
+<p>Create a basic UML Diagram and then assign responsibilities.</p>
+<p>Always multiple successful ways to incorporate different ideas.</p>
+<p>CRC: Class responsibility collaboration.</p>
+<p>Class Name, Responsibility, collaborators(other classes).</p>
+<p>Use nouns in the description.</p>
+<p>Payment</p>
+<p>Store payment detaisl, validate payment.</p>
+<p>Product</p>
+<p>Attributes</p>
+<p>name</p>
+<p>isActive</p>
+<p>launchDate</p>
+<p>itemNumber</p>
+<p>Operations</p>
+<p>getName</p>
+<p>setActive</p>
+<p>getProductDetails</p>
+<p>verbNoun</p>
+<p>instantiation: Create a new object.</p>
+<p>Customer fred = new Customer();</p>
+<p>Constructor: Special method that exists to construct the object.</p>
+<p>Spaceship</p>
+<p>name</p>
+<p>shieldStrength</p>
+<p>fire();</p>
+<p>reduceShields();</p>
+<p>Spaceship turny = new Spaceship();</p>
+<p>//Object exists, but has a meaningless state.</p>
+<p>name: null</p>
+<p>shieldStrength: 0</p>
+<p>Constructors allow you to populate meaningful values when a new object is instantiated.</p>
+<p>public Spaceship() {</p>
+<p> name = “theTurny”</p>
+<p>shieldStrength = 100;</p>
+<p>}</p>
+<p>overloaded, allow you to set the values to different values. Allows flexibiliy.</p>
+<p>static: one object shared accross all levels. One copy along all objects.</p>
+<p>Inheritance describes an “Is A” relationship.</p>
+<p>An employee is a person a customer is a person</p>
+<p>Abstract classes are never instantiated.</p>
+<p>Interface: &lt;ust provide the methods the interface calls out. Many differnt classes can use the same interace.</p>
+<p>Well tested best practices to write code. design pattern</p>
+<p>design patterns, gang of 4</p>
+<p>DRY: Dont repeat yourself.</p>
+<p>YAGNI: You ain’t gonna need it. </p>
+<p>Don’t write speculative code, keep it simple and write for today.</p>
+<p>Code smell, unecessary code. Code smell.</p>
+<p>long method</p>
+<p>short identifiers</p>
+<p>pointless comments</p>
+<p>god object</p>
+<p>feature envy</p>
+<p>SOLID</p>
+<p>uncle bob</p>
+<p>single resp</p>
+<p>One reason to exist.</p>
+<p>open close</p>
+<p>open to extension but closed to modification</p>
+<p>GRASP</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/" data-id="cjh6irpvj0008kkutruymjvak" class="article-share-link">Partager</a>
+      <a data-url="https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/" data-id="cjh6irpww000vkkutr0wa0p4n" class="article-share-link">Partager</a>
       
-        <a href="https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/#disqus_thread" class="article-comment-link">Commentaires</a>
+        <a href="https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/#disqus_thread" class="article-comment-link">Commentaires</a>
       
       
     </footer>
@@ -131,19 +232,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/blog/2017/03/21/Javascript-ES6-Mini-Series/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
-      <div class="article-nav-title">
-        
-          Javascript ES6 Mini Series
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/2017/03/06/Learning-react-resources/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2018/03/12/Sales-Dogs-book-review/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">Resources I am using to learn react</div>
+      <div class="article-nav-title">Sales Dogs book review</div>
     </a>
   
 </nav>
@@ -235,7 +327,7 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'franklynroth';
   
-  var disqus_url = 'https://franklynroth.me/blog/2017/03/19/Android-s-keyboard-messes-with-viewport-dimension/';
+  var disqus_url = 'https://franklynroth.me/blog/2018/05/14/Object-Oriented-Design-Course-review-by-Simon-Allardice-on-Lynda/';
   
   (function(){
     var dsq = document.createElement('script');
