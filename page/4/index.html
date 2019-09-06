@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: motivation | Franklyn Roth&#39;s Blog</title>
+  <title>Franklyn Roth&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Franklyn Roth&#39;s Blog">
-<meta property="og:url" content="https://far3.github.io/blog/tags/motivation/index.html">
+<meta property="og:url" content="https://far3.github.io/blog/page/4/index.html">
 <meta property="og:site_name" content="Franklyn Roth&#39;s Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Franklyn Roth&#39;s Blog">
@@ -79,38 +79,62 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/blog/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/blog/2016/04/07/Blog-post-revisisted/" class="archive-article-date">
-  <time datetime="2016-04-07T06:00:00.000Z" itemprop="datePublished">Apr 7</time>
+    <article id="post-Border-box" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2013/05/31/Border-box/" class="article-date">
+  <time datetime="2013-05-31T06:00:00.000Z" itemprop="datePublished">2013-05-31</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/blog/2016/04/07/Blog-post-revisisted/">Why I restarted this blog.</a>
+      <a class="article-title" href="/blog/2013/05/31/Border-box/">What exactly does {box-sizing:border-box} do?</a>
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>box-sizing: border-box</code></p>
+<p>I first  came across border-box during an assignment on making my own css column layouts from scratch. Those examples can be found <a href="http://codepen.io/franklynroth/pen/BoKvPp" target="_blank" rel="noopener">here</a> and <a href="http://codepen.io/franklynroth/pen/BoKvPp" target="_blank" rel="noopener">here</a>. I won’t delve into them right now, but will explain what <code>box-sizing: border-box</code> actually does.</p>
+<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank" rel="noopener">MDN</a>{:target=”_blank”}, <code>content-box</code> is the default style of the <code>box-sizing</code> property. This means that <q>the width and height properties are measured including only the content, but not the padding, border or margin.</q> <code>border-box</code> means that <q>the width and height properties include the padding and border, but not the margin.</q></p>
+<p>Now if you are like me, I needed to build a codepen example to truly understand what I ust read. Take a guess at what will happen to the code below. Then scroll down for the result.</p>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content-box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"border-box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>     </span><br></pre></td></tr></table></figure>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.content-box</span>&#123;</span><br><span class="line">  <span class="attribute">background-color</span>:tomato;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">350px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span> solid black;</span><br><span class="line"> &#125;</span><br><span class="line"><span class="selector-class">.border-box</span>&#123;</span><br><span class="line">  <span class="attribute">background-color</span>:seagreen;</span><br><span class="line">  <span class="attribute">box-sizing</span>:border-box;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">350px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span> solid black;</span><br><span class="line">  <span class="attribute">margin-top</span>:<span class="number">10px</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>Check out the size of the red and green divs for yourself by hovering over them after pressing<code>CTRL + SHIFT + C</code> in chrome and notice the difference. The only propery that has changed other than the color is <code>box-sizing:border-box;</code> on the <code>.border-box</code> div.</p>
+<p></p><p data-height="268" data-theme-id="0" data-slug-hash="OyNBKB" data-default-tab="result" data-user="franklynroth" class="codepen">See the Pen <a href="http://codepen.io/franklynroth/pen/OyNBKB/" target="_blank" rel="noopener">border-box functional example.</a> by Franklyn (<a href="http://codepen.io/franklynroth" target="_blank" rel="noopener">@franklynroth</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>In short, the <code>border: 10px solid black;</code>is taken into account when calculating the <code>width:350px</code> and <code>height:100px</code> of the green div. This shrinks the content area down to 330px by 80px to ensure that the entire element takes up the declared height and width of 350px by 100px instead of taking up a larger area than initially declared like the red div does at 380px by 120px.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://far3.github.io/blog/2013/05/31/Border-box/" data-id="cjs4r95o80005s4utrqsq7bat" class="article-share-link">Share</a>
+      
+        <a href="https://far3.github.io/blog/2013/05/31/Border-box/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/border-box/">border-box</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/pre-work/">pre-work</a></li></ul>
+
+    </footer>
   </div>
+  
 </article>
-  
-  
-    </div></section>
+
+
   
 
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/blog/page/3/">&laquo; __('prev')</a><a class="page-number" href="/blog/">1</a><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
 </section>
         
           <aside id="sidebar">
